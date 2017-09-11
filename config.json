@@ -1,0 +1,30 @@
+{
+	"Port": 80,
+	"Storage": {
+		"Ram": {
+			"Mode": "HL",
+			"SizeGB": 0.25
+		}, 
+		"Ssd": {
+			"Mode": "RR",
+			"SizeGB": 10,
+			"Path": "/home/me/ssd"
+		}, 
+		"Hdd": {
+			"Mode": "RR",
+			"SizeGB": 0,
+			"Path": "/home/me/hdd"
+		}
+	},
+	"Hosts": {
+		"localhost": {
+			"TrackDepth": 1,
+			"Origin": [
+				"http://invalid.invalid"
+			]
+		}
+	},
+	"Track": {
+		"Redis": "redis://127.0.0.1:6379"
+	}
+}
